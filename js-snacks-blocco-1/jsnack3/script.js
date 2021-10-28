@@ -1,20 +1,20 @@
-/* Crea un array vuoto.
-Chiedi per 6 volte all’utente di inserire un numero,
-se è dispari inseriscilo nell’array */
+/*  Il software deve chiedere per 5 volte all’utente di inserire un numero.
+ Il programma stampa la somma di tutti i numeri inseriti con for
+ e opzionalmente con while (edited)  */
 
 
-//creiamo l'array vuoto
-const array= [];
 
-for (let i = 0; i < 6; i++) {
+//variabile del risultato
+let tot = 0;
 
-    //chiediamo all'utente un numero
-    const numero = parseInt( prompt('Inserisci un Numero') );
+for (let i = 0; i < 5; i++) {
+    //chiediamo i numeri all'utente
+    const numero = parseInt( prompt('Inserisci un numero'));
 
-    if (numero % 2 != 0 ){
-        array.push(numero)
-    }
+    //sommiamo i numeri
+    tot+= numero
 
 }
 
-document.body.innerHTML += `<h3>i numeri dispari sono ${array}</h3>`
+//stampiamo il messaggio
+document.body.innerHTML = `<h3>la somma di tutti i numeri è ${tot}</h3>`
