@@ -23,7 +23,6 @@ for (let i = 0; i < 10; i++) {
 }
 
 console.log(array)
-
 document.body.innerHTML = `<h3>Il risultato della somma dei numeri dispari è ${tot}</h3>`
 
 
